@@ -4,7 +4,7 @@ import time
 import datetime
 
 maksimal = range(100000000)
-id_table=9009
+id_table=178198
 
 for i_loop in maksimal:
     id_table += 1
