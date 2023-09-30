@@ -11,8 +11,8 @@ def sample_responses(input_text):
 
     if user_message in ("time"):
         now = datetime.now()
-        datetime = nowstrftime("%d/%m/$y, %H:%M:%S")
+        date_time = nowstrftime("%d/%m/$y, %H:%M:%S")
 
-        return str(datetime)
+        return str(date_time)
 
-    return "I dont understand"
+    return "I dont understand you"
