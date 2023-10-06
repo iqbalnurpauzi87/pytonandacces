@@ -34,7 +34,7 @@ def main():
 
     dp.add_error_handler(error)
 
-    updater.start_polling(5)
+    updater.start_polling()
     updater.idle()
 
 main()
