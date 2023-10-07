@@ -11,7 +11,7 @@ def sample_responses(input_text):
 
     if user_message in ("time", "time?"):
         now = datetime.now()
-        date_time = now.strftime("%d/%m/$y, %H:%M:%S")
+        date_time = now.strftime("%d/%m/%y, %H:%M:%S")
 
         return str(date_time)
 
