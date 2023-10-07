@@ -3,18 +3,22 @@ from  telegram.ext import *
 import Responses as R
 
 print("bot dimulai..")
+# update.message.reply_text('Bot is ready')
 
 
 def start_command(update, context):
     update.message.reply_text('type something random to get started')
+    print("bot receipe")
 
 def help_command(update, context):
     update.message.reply_text('if you need help, you should ask for it on google')
+    print("bot receipe")
 
-def handle_message(update, context):
+def handle_message(update, context):  #call to response
     text = str(update.message.text).lower()
+    print("bot receipe", text)
     response = R.sample_responses(text)
-
+    print("bot sendt")
     update.message.reply_text(response)
 
 def error(update, context):
