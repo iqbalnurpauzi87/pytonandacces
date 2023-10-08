@@ -4,13 +4,13 @@ import time
 import datetime
 
 maksimal = range(100000000)
-id_table=201794
+id_table=221699
 
 for i_loop in maksimal:
     id_table += 1
     now = datetime.datetime.now()
     date_time = now.strftime("%d/%m/%y %H:%M:%S")
-    # time.sleep(1/1000)
+    time.sleep(5)
 
     try:
         con_string = r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:\iqbal\nutrifood\pythonProject\pytdb.accdb;'
